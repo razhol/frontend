@@ -1,0 +1,14 @@
+<h1>Deposit</h1>
+<div class = "container">
+    <fieldset class="form-group">
+        <label>Item no</label>
+        <input type = "text" [(ngModel)]= "todo.item_number" class="form-control" name = "item no" required= "required">
+    </fieldset>
+    
+    <fieldset class="form-group">
+        <label>Amount</label>
+        <input type = "text" [(ngModel)]= "todo.amount" class="form-control" name = "Amount" required= "required">
+   </fieldset>
+
+   <button class="btn btn-success"  (click)="saveTodo()">Deposit</button>
+</div>

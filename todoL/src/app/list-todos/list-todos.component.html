@@ -1,0 +1,32 @@
+<h1>My-Todos</h1>
+<div class="container">
+
+  <table class = "table">
+    <thead>
+        <th>item_number</th>
+        <th>name</th>
+        <th>amount</th>
+        <th>inventory_code</th>
+        <th>Withdrawal</th>
+        <th>Deposit</th>
+        <th>Delete</th>
+    </thead>
+
+    <tbody *ngFor = "let todo of todos">
+        <td>{{todo.item_number}}</td>
+        <td>{{todo.name}}</td>
+        <td>{{todo.amount}}</td>
+        <td>{{todo.inventory_code}}</td>
+        <td><button (click)="WithdrawalT(todo.item_number)" class="btn btn-success">Withdrawal</button></td>
+        <td><button (click)="DepositT(todo.item_number)" class="btn btn-success">Deposit</button></td>
+        <td><button (click)="deleteTodo(todo.item_number)" class="btn btn-warning">Delete</button></td>
+    </tbody>
+
+
+ </table>
+
+    <div class="row">
+        <button (click)="addTodo()" class="btn btn-success">Add</button>
+    </div>
+
+</div>

@@ -1,0 +1,20 @@
+
+<h1>AddItem</h1>
+ <div class = "container">
+      <fieldset class="form-group">
+        <label>name</label>
+        <input type = "text" [(ngModel)]= "todo.name" class="form-control" name = "name" required= "required">
+      </fieldset>
+    
+      <fieldset class="form-group">
+        <label>Amount</label>
+        <input type = "text" [(ngModel)]= "todo.amount" class="form-control" name = "Amount" required= "required">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label>inventory_code</label>
+        <input type = "text" [(ngModel)]= "todo.inventory_code" class="form-control" name = "Amount" required= "required">
+      </fieldset>
+
+        <button class="btn btn-success"  (click)="saveTodo()">Save</button>
+  </div>
